@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <meta name="description" content="ИгроБаза - это портал об играх">
+    <meta name="keywords" content="игры на ПК, на PlayStation, Xbox">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <main>
+
+        <header>
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">ИгроБаза</a></h1>
+                    <h2>Игры - наша страсть!</h2>
+                </div>
+            </div>
+
+            <div class="menubar">
+                
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="solo.html">Соло игры</a></li>
+                    <li><a href="online.html">Онлайн игры</a></li>
+                    <li><a href="rating_solo.html">Рейтинг соло игр</a></li>
+                    <li><a href="rating_online.html">Рейтинг онлайн игр</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </header>
+
+    <div class="site_content">
+
+        <div class="sidebar_container">
+
+            <div class="sidebar">
+                <h2>Поиск</h2>
+                <form method="post" action="#" id="search_form">
+                    <input type="search" name="search_field" placeholder="Ваш запрос" />
+                    <input type="submit" class="btn" value="Найти" />
+                </form>
+            </div>
+
+            <div class="sidebar">
+                <h2>Вход</h2>
+                <form method="post" action="#" id="login">
+
+                    <input type="text" name="login_field" placeholder="Логин" />
+                    <input type="password" name="password_field" placeholder="Пароль" />
+                    <input type="submit" class="btn" value="Вход" />
+                    <div class="lables_passreg_text">
+                        <span><a href="#">Забыли пароль?</a></span> | <span><a href="#">Регистрация</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="sidebar">
+                <h2>Новости</h2>
+                <span>31.02.2018</span>
+                <p>Мы запустили расширенный поиск</p>
+                <a href="#">Читать</a>
+            </div>
+
+            <div class="sidebar">
+                    <h2>Соло игры</h2>
+                    <ul>
+                        <li><a href="show.html">Ведьмак 3: Дикая Охота</a><span class="rating_sidebar"> оценка на Игромании - 5/5</span></li>
+                        <li><a href="show_4.html">Red Dead Redemption 2</a><span class="rating_sidebar"> оценка на Игромании - 5/5</span></li>
+                        <li><a href="show_2.html">God of War (2018)</a><span class="rating_sidebar"> оценка на Игромании - 4/5</span></li>
+                        <li><a href="show_3.html">Batman: Arkham Knight</a><span class="rating_sidebar"> оценка на Игромании - 5/5</span></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar">
+                    <h2>Онлайн игры</h2>
+                    <ul>
+                        <li><a href="show_online_1.html">Chivalry 2</a><span class="rating_sidebar"> оценка на Игромании - 4/5</span></li>
+                        <li><a href="show_online_2.html">Star Wars: Battlefront 2</a><span class="rating_sidebar"> оценка на Игромании - 3/5</span></li>
+                        <li><a href="show_online_3.html">GWENT</a><span class="rating_sidebar"> оценка на Игромании - 5/5</span></li>
+                        <li><a href="show_online_4.html">Overwatch</a><span class="rating_sidebar"> оценка на Игромании - 5/5</span></li>
+                    </ul>
+                </div>
+
+        </div>
+
+            <div class="content">
+
+                <table>
+
+                    <tr>
+                        <th></th>
+                        <th>Фильм</th>
+                        <th class="center">Год</th>
+                        <th class="center"> Рейтинг</th>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/witcher.png"></td>
+                        <td>1. <a href="show.html">Ведьмак 3</a></td>
+                        <td class="center">2015</td>
+                        <td class="center rating">5</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/rdr2.png"></td>
+                        <td>2. <a href="show.html">Red Dead Redemption 2</a></td>
+                        <td class="center">2018</td>
+                        <td class="center rating">5</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/god.png"></td>
+                        <td>3. <a href="show_2.html">God of War</a></td>
+                        <td class="center">2018</td>
+                        <td class="center rating">4/5</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/batman.png"></td>
+                        <td>4. <a href="show.html">Batman</a></td>
+                        <td class="center">2015</td>
+                        <td class="center rating">5/5</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    <footer>
+        <p>
+            <a href="index.html">Главная</a> |
+            <a href="solo.html">Соло игры</a> |
+            <a href="online.html">Онлайн игры</a> |
+            <a href="rating_solo.html">Рейтинг соло игр</a> |
+            <a href="rating_online.html">Рейтинг онлайн игр</a> |
+            <a href="contact.html">Контакты</a> |
+        </p>
+        <p>igromania.ru</p>
+    </footer>
+
+    </main>
+
+</body>
+</html>
