@@ -1,5 +1,5 @@
-var FIELD_SIZE_X = 20;
-var FIELD_SIZE_Y = 20;
+var FIELD_SIZE_X = 40;
+var FIELD_SIZE_Y = 40;
 var SNAKE_SPEED = 300;
 var snake = [];
 var direction = 'y+';
