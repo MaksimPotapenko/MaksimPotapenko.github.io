@@ -1,0 +1,320 @@
+.header a, a:hover {
+	color: #f0ad4e;
+	text-decoration: none;
+}
+
+.header h1 {
+	letter-spacing: 15px;
+	font-size: 300%;
+}
+
+.header p {
+	color: white !important;
+	font-size: 90%;
+	letter-spacing: 3px;
+}
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #346270;
+}
+
+.nav-pills>li>a {
+	color: #fff;
+}
+
+.nav-pills>li>a:hover {
+	background-color: #346270;
+}
+
+
+.navbar-inverse {
+    padding: 1%;
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+	.nav-pills>li {
+		float: none;
+	}
+
+	.nav-pills {
+		text-align: center;
+	}
+
+	.header h1 { 
+	    font-size: 280%;
+	    letter-spacing: 5px;
+	}
+
+	.header {
+		text-align: center;
+	}
+} 
+
+
+.clear {
+	clear: both;
+	height: 63px;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+html, body {
+	height: 100%;
+}
+
+
+.films_block {
+	text-align: center;
+}
+
+.films_block img {
+	margin-bottom: 5%;
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+	width: 100%;
+}
+
+.film_label {
+	padding: 2%;
+	margin-bottom: 4%;
+}
+
+.margin-8 {
+	margin-top: 8%;
+}
+
+
+.panel {
+	border: none;
+}
+
+.panel-body {
+	background-color: #f9f9f9;
+}
+
+.panel-info>.panel-heading {
+	background-color: #f0ad4e;
+	color: white;
+	border-color: transparent;
+}
+
+.sidebar-header {
+	font-size: 120%;
+	letter-spacing: 2px;
+}
+
+
+.form-control {
+	border-radius: 0px;
+}
+
+.input-lg {
+	font-size: 14px;
+}
+
+.list-group-item-warning {
+	color: #580000;
+	background-color: #f9f9f9;
+}
+
+.badge {
+	background-color: rgb(0, 0, 0);
+}
+
+
+.info-block {
+	font-size: 120%;
+}
+
+.info-block .badge {
+	font-size: 80%;
+}
+
+.info-block span{
+	margin-right: 3%;
+}
+
+textarea.form-control {
+	height: 200px;
+}
+
+
+.table tbody>tr>td.vert-align {
+	vertical-align: middle;
+}
+
+
+footer {
+	color: #666;
+	background: rgb(0, 0, 0);
+	padding: 17px 0 18px 0;
+	border-top: 1px solid rgb(0, 0, 0);
+}
+
+footer a {
+	color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+	color: #efefef;
+}
+
+
+
+
+
+/* CSS Mobile */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+    .header {
+        background-color: #fff;
+        min-width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .site_content {
+        width: 100%;
+    }
+
+    .menubar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar_container {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    ul.menu {
+        float: none;
+    }
+
+    ul.menu li {
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    .logo h1 {
+        font: normal 235% 'century gothic', arial, sans-serif;
+    }
+
+    .logo h2 {
+        font: normal 235% 'century gothic', arial, sans-serif;
+        color: white;
+    }
+
+    .content h1, h2 {
+        font: normal 110% 'century gothic', arial;
+    }
+
+    .films_block img {
+        width: 43%;
+    }
+
+    .posts_content p {
+        line-height: 1.5em;
+        padding: 3%;
+        text-align: left;
+    }
+
+    .posts p {
+        font-size: 120%;
+    }
+
+    /* films page*/
+
+    .info_film {
+        float: none;
+        height: 100%;
+    }
+
+    .info_film img {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .button {
+        float: none;
+    }
+
+    /* rating page */
+
+    table {
+        display: block;
+    }
+
+    th {
+        font-size: 75%;
+    }
+
+    td {
+        padding: 0;
+        margin: 0;
+        font-size: 95%;
+        text-align: left;
+    }
+
+    /* show page */
+
+    iframe {
+        width: 88%;
+        height: 100%;
+    }
+
+    .descriptions_film {
+        width: 90%;
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    .descriptions_film img {
+        float: none;
+        width: 73%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-left: 11%;
+        margin-bottom: 7%;
+    }
+
+    .reviews {
+        text-align: left;
+        width: 96%;
+    }
+
+    .send input[type="text"] {
+        width: 80%;
+    }
+
+    .send textarea {
+        width: 85%;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильмы</title>
+    <meta name="description" content="КиноБаза - это портал о кино">
+    <meta name="keywords" content="фильмы, фильмы онлайн, HD">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <main>
+
+        <header>
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">КиноБаза</a></h1>
+                    <h2>Кино - наша страсть!</h2>
+                </div>
+            </div>
+
+            <div class="menubar">
+                
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="films.html">Фильмы</a></li>
+                    <li><a href="series.html">Сериалы</a></li>
+                    <li><a href="rating.html">Рейтинг фильмов</a></li>
+                    <li><a href="rating_series.html">Рейтинг сериалов</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="site_content">
+
+            <div class="sidebar_container">
+
+                <div class="sidebar">
+                    <h2>Поиск</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="Ваш запрос" />
+                        <input type="submit" class="btn" value="Найти" />
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Вход</h2>
+                    <form method="post" action="#" id="login">
+
+                        <input type="text" name="login_field" placeholder="Логин" />
+                        <input type="password" name="password_field" placeholder="Пароль" />
+                        <input type="submit" class="btn" value="Вход" />
+                        <div class="lables_passreg_text">
+                            <span><a href="#">Забыли пароль?</a></span> | <span><a href="#">Регистрация</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <h2>Новости</h2>
+                    <span>31.02.2018</span>
+                    <p>Мы запустили расширенный поиск</p>
+                    <a href="#">Читать</a>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Рейтинг фильмов</h2>
+                    <ul>
+                        <li><a href="show.html">Интерстеллар</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.1</span></li>
+                        <li><a href="show_4.html">Матрица</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.0</span></li>
+                        <li><a href="show_2.html">Безумный Макс: Дорога Ярости</a><span class="rating_sidebar"> оценка на Кинопоиске - 7.5</span></li>
+                        <li><a href="show_3.html">Пираты Карибкого Моря: Проклятие Черной Жемчужины</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.3</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Рейтинг сериалов</h2>
+                    <ul>
+                        <li><a href="series_1.html">Ходячие Мертвецы</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.0</span></li>
+                        <li><a href="#">Игра Престолов</a><span class="rating_sidebar"> оценка на Кинопоиске - 9.0</span></li>
+                        <li><a href="#">Мандалорец</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.0</span></li>
+                        <li><a href="#">Настоящий Детектив</a><span class="rating_sidebar"> оценка на Кинопоиске - 8.7</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="info_film">
+                    <img src="assets/img/dead.png">
+                    Сериал начинается с того, как помощник шерифа Рик Граймс
+                    и его напарник вместе с другими офицерами полиции преследуют
+                    машину с преступниками. Граймс был ранен в грудь и впал в кому.
+                    Пока он лежал без сознания, миру, который мы знаем, пришел конец:
+                    неизвестный вирус вырвался на свободу, он распространяется с 
+                    огромной скоростью и заставляет людей после смерти подниматься
+                    вновь. Единственное спасение - бить мертвецам в голову.
+
+                    <div class="button"><a href="series_1.html">Смотреть</a></div>
+                </div>
+
+                <div class="info_film">
+                    <img src="assets/img/thrones.png">
+                    Король-узурпатор Роберт из дома Баратеонов подозревает, что
+                    во дворце плетут прротив него заговор. Он призывает своего старого
+                    друга Эддарда из дома Старков - Хранителя Севера - в столицу семи 
+                    Королевств, чтобы быть своим десницей - правой рукой - и расследовать
+                    загадочную смерть предшественника Старка. Дело оказывается куда серьезней,
+                    чем лорд Старк мог предположить, королю грозит смерть.
+
+                    <div class="button"><a href="#">Смотреть</a></div>
+                </div>
+
+                <div class="info_film">
+                    <img src="assets/img/mando.png">
+                    История происходит после падения Галактической Империи и смерти ситхов:
+                    Дарта Сидиуса и Дарта Вейдера. Во Вселенной неспокойно. Новая Республика
+                    не может держать системы железной хваткой, как это делала Империя,
+                    в результате чего про-имперские настроения на окраинах Республики
+                    начинают оживать. От уцелевшего во время войны отряда Империи потсупает
+                    задание для наемников: найти и доставить ЖИВОЙ очень важную цель. За 
+                    заказ берутся многие, в том числе наемник, которого все знают как Мандалорец.
+                    
+                    <div class="button"><a href="#">Смотреть</a></div>
+                </div>
+
+                <div class="info_film">
+                    <img src="assets/img/detective.png">
+                    В штате Луизиана происходит загадочное и жестокое убийство. Позже
+                    еще несколько таких же. Жители в панике, в штате орудует серийный убийца,
+                    а полиция ума не приложит, где им искать, все улики упираются в никуда. Детективы
+                    Коул и Харт из убойного отдела бьются над этим делом, но убийца хитрее их обоих.
+                    К тому же между детективами быстро портятся отношения6 пессимистичный Коул откровенно
+                    раздрает Харта, что еще больше мешает расследованию.
+
+                    <div class="button"><a href="#">Смотреть</a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <footer>
+        <p>
+            <a href="index.html">Главная</a> |
+            <a href="films.html">Фильмы</a> |
+            <a href="series.html">Сериалы</a> |
+            <a href="rating.html">Рейтинг фильмов</a> |
+            <a href="rating_series.html">Рейтинг сериалов</a> |
+            <a href="contact.html">Контакты</a> |
+        </p>
+        <p>kinopoisk.ru</p>
+    </footer>
+
+    </main>
+
+</body>
+</html>
