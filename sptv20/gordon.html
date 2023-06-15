@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Видео на весь экран</title>
+  <style>
+    /* Стили для видео на всю страницу */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    #video {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var video = document.getElementById("video");
+
+      // Ожидаем, пока видео загрузится и будет готово к воспроизведению
+      video.addEventListener("canplay", function() {
+        video.play();
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Контейнер для видео на всю страницу -->
+  <div id="video-container">
+    <video id="video" autoplay controls>
+      <source src="assets/video/gordon.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Админ-панель</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Админ-панель сайта анекдотов</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="main.html">Главная</a></li>
+			<li><a href="category.html">Категории</a></li>
+			<li><a href="#">Популярные</a></li>
+			<li><a href="#">Новые</a></li>
+			<li><a href="add.html">Добавить анекдот</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Добавление нового анекдота</h2>
+		<form>
+			<label for="title">Заголовок:</label>
+			<input type="text" id="title" name="title"><br>
+			<label for="category">Категория:</label>
+			<select id="category" name="category">
+				<option value="Животные">Животные</option>
+				<option value="Люди">Люди</option>
+				<option value="Политика">Политика</option>
+			</select><br>
+			<label for="content">Текст анекдота:</label><br>
+			<textarea id="content" name="content" rows="10" cols="50"></textarea><br>
+			<label for="image">Изображение:</label>
+			<input type="file" id="image" name="image"><br>
+			<input type="submit" value="Опубликовать">
+		</form>
+	</main>
+	<footer>
+		<p>Контактная информация: email@example.com</p>
+		<ul>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Instagram</a></li>
+		</ul>
+		<p><a href="#">О сайте</a> | <a href="#">Правила публикации анекдотов</a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Лютейшие анекдоты от Увара Уварыча</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <style>
+                        /* Стили для выпадающего окна с категориями */
+                        nav {
+                          background-color: #f1f1f100;
+                          padding: 10px;
+                        }
+                    
+                        .dropdown {
+                          position: relative;
+                          display: inline-block;
+                        }
+                    
+                        .dropdown-content {
+                          position: absolute;
+                          top: 100%;
+                          left: 0;
+                          z-index: 1;
+                          display: none;
+                          background-color: #000000b2;
+                          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                          min-width: 200px;
+                          padding: 10px;
+                        }
+                    
+                        .dropdown:hover .dropdown-content {
+                          display: block;
+                        }
+                    
+                        .category {
+                          cursor: pointer;
+                          padding: 5px;
+                        }
+                    
+                        .category:hover,
+                        .category.active {
+                          background-color: #f1f1f1;
+                        }
+                      </style>
+                      <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                          var categories = document.getElementsByClassName("category");
+                    
+                          // Добавляем обработчик события клика для каждой категории
+                          for (var i = 0; i < categories.length; i++) {
+                            categories[i].addEventListener("click", function() {
+                              // Удаляем активное состояние со всех категорий
+                              for (var j = 0; j < categories.length; j++) {
+                                categories[j].classList.remove("active");
+                              }
+                    
+                              // Добавляем активное состояние для выбранной категории
+                              this.classList.add("active");
+                            });
+                          }
+                        });
+                      </script>
+                    </head>
+                    <body>
+                      <nav>
+                        <div class="dropdown">
+                          <span style="text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:20px; font-family:'Arial Black'; background-color: #00000000">Категории</span>
+                          <div class="dropdown-content">
+                            <div class="category" style="text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:15px; font-family:'Arial'; background-color: #00000000">Черный юмор</div>
+                            <div class="category" style="text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:15px; font-family:'Arial'; background-color: #00000000">Политические</div>
+                            <div class="category" style="text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:15px; font-family:'Arial'; background-color: #00000000">Про калика</div>
+                          </div>
+                        </div>
+                      </nav>
+
+                      
+
+                    <style>
+                        /* Стили для модального окна */
+                        .modal {
+                        display: none;
+                        position: fixed;
+                        z-index: 1;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        overflow: auto;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        }
+
+                        .modal-content {
+                        background-color: #fefefe;
+                        margin: 15% auto;
+                        padding: 20px;
+                        border: 1px solid #888;
+                        width: 300px;
+                        }
+
+                        .close {
+                        color: #aaa;
+                        float: right;
+                        font-size: 28px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        }
+
+                        .close:hover,
+                        .close:focus {
+                        color: black;
+                        text-decoration: none;
+                        cursor: pointer;
+                        }
+
+                        /* CSS для переноса кнопки в другую часть экрана */
+                        .btn-container {
+                        position: fixed;
+                        top: 20px;
+                        right: 370px;
+                        }
+                    </style>
+                      <script>
+                        // JavaScript для открытия и закрытия модального окна
+                        document.addEventListener("DOMContentLoaded", function() {
+                          // Получаем ссылки на элементы
+                          var modal = document.getElementById("modal");
+                          var btnOpen = document.getElementById("btn-open");
+                          var btnClose = document.getElementsByClassName("close")[0];
+                    
+                          // Открываем модальное окно при клике на кнопку
+                          btnOpen.addEventListener("click", function() {
+                            modal.style.display = "block";
+                          });
+                    
+                          // Закрываем модальное окно при клике на кнопку "Закрыть" или вне его области
+                          btnClose.addEventListener("click", function() {
+                            modal.style.display = "none";
+                          });
+                    
+                          window.addEventListener("click", function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          });
+                        });
+                      </script>
+                    </head>
+                    <body>
+                        <div class="btn-container">
+                            <button id="btn-open" style="text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:20px; font-family:'Arial Black'; background-color: #00000000">Log in</button>
+                          </div>
+                    
+                      <!-- Модальное окно с формами регистрации и входа -->
+                      <div id="modal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                    
+                          <h1>Регистрация</h1>
+                          <form action="/register" method="post">
+                            <label for="username">Имя пользователя:</label>
+                            <p style=" margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; color:#6a0e07;"></span></p>
+                            <input type="text" id="username" name="username" required><br>
+                    
+                            <label for="password">Пароль:</label>
+                            <p style=" margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; color:#6a0e07;"></span></p>
+                            <input type="password" id="password" name="password" required><br>
+                    
+                            <input type="submit" value="Зарегистрироваться">
+                          </form>
+                    
+                          <h1>Вход</h1>
+                          <form action="/login" method="post">
+                            <label for="username">Имя пользователя:</label>
+                            <p style=" margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; color:#6a0e07;"></span></p>
+                            <input type="text" id="username" name="username" required><br>
+                    
+                            <label for="password">Пароль:</label>
+                            <p style=" margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New'; color:#6a0e07;"></span></p>
+                            <input type="password" id="password" name="password" required><br>
+                    
+                            <input type="submit" value="Войти">
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html" style="text-align:center;text-decoration: none; border: 0; color:rgb(255, 255, 255); font-size:85px; font-family:'Arial Black'">Лютейшие анекдоты от <br>Увара Уварыча</a>
+                    <h2 class="masthead-subheading mb-0">Анекдоты, чтобы поржать на парах</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <a href="obama.html"><img src="assets/img/01.jpg"></a>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <a href="best.html" style="text-decoration: none; color:black;font-size:60px">ЛУЧШЕЕ</a>
+                            <p>Смотрите компиляцию лучших анекдотов нашего сайта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <a href="zelensky.html"><img src="assets/img/02.jpg"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <a href="new.html" style="text-decoration: none; color:black;font-size:60px">НОВЫЕ</a>
+                            <p>Или самое свежее!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <a href="gordon.html"><img src="assets/img/03.jpg"></a>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <a href="forum.html" style="text-decoration: none; color:black;font-size:60px">ФОРУМЫ</a>
+                            <p>Заходите на наши форумы!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
